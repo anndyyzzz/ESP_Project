@@ -113,7 +113,7 @@ void SevenSegment::DisplayNum3()
 {
     common.OFF();
     seg_a.ON();
-    seg_b.ON();
+    seg_b.OFF();
     seg_c.ON();
     seg_d.ON();
     seg_e.OFF();
@@ -125,12 +125,12 @@ void SevenSegment::DisplayNum3()
 void SevenSegment::DisplayNum4()
 {
     common.OFF();
-    seg_a.OFF();
+    seg_a.ON();
     seg_b.ON();
     seg_c.ON();
-    seg_d.OFF();
+    seg_d.ON();
     seg_e.OFF();
-    seg_f.ON();
+    seg_f.OFF();
     seg_g.ON();
     common.ON();
 }
