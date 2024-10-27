@@ -20,6 +20,7 @@ public:
     } 
     void HardwareTest();
     void DisplayBlank();
+    void DisplayNumber(int number);
     void DisplayNum0();
     void DisplayNum1();
     void DisplayNum2();
