@@ -70,6 +70,15 @@ void SevenSegment::DisplayNumber(int number)
     }
 }
 
+void SevenSegment::DisplayOff()
+{
+    common.OFF();
+}
+void SevenSegment::DisplayOn()
+{
+    common.ON();
+}
+
 void SevenSegment::DisplayNum0()
 {
     common.OFF();
@@ -79,7 +88,7 @@ void SevenSegment::DisplayNum0()
     seg_d.ON();
     seg_e.ON();
     seg_f.ON();
-    seg_g.ON();
+    seg_g.OFF();
     common.ON();
 }
 
@@ -113,24 +122,24 @@ void SevenSegment::DisplayNum3()
 {
     common.OFF();
     seg_a.ON();
-    seg_b.OFF();
+    seg_b.ON();
     seg_c.ON();
     seg_d.ON();
     seg_e.OFF();
-    seg_f.ON();
-    seg_g.OFF();
+    seg_f.OFF();
+    seg_g.ON();
     common.ON();
 }
 
 void SevenSegment::DisplayNum4()
 {
     common.OFF();
-    seg_a.ON();
+    seg_a.OFF();
     seg_b.ON();
     seg_c.ON();
-    seg_d.ON();
+    seg_d.OFF();
     seg_e.OFF();
-    seg_f.OFF();
+    seg_f.ON();
     seg_g.ON();
     common.ON();
 }
@@ -163,7 +172,7 @@ void SevenSegment::DisplayNum6()
 
 void SevenSegment::DisplayNum7()
 {
-    common.OFF();
+   common.OFF();
     seg_a.ON();
     seg_b.ON();
     seg_c.ON();
